@@ -2,7 +2,7 @@
 Summary:	Rack middleware to force SSL/TLS.
 Name:		ruby-%{pkgname}
 Version:	1.3.4
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
