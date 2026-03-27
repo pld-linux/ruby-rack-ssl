@@ -1,13 +1,13 @@
 %define pkgname rack-ssl
 Summary:	Rack middleware to force SSL/TLS.
 Name:		ruby-%{pkgname}
-Version:	1.3.4
-Release:	2
+Version:	1.4.1
+Release:	1
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	15789993d97f1cc1e7907f3b37165f4f
-URL:		http://github.com/brynary/rack-test
+# Source0-md5:	3938e1e66436e69054584204d020bb9e
+URL:		https://github.com/josh/rack-ssl
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
 Requires:	ruby-rack >= 1.0
@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.md
+%doc LICENSE README.md
 %{ruby_vendorlibdir}/rack/ssl.rb
 %{ruby_specdir}/%{pkgname}-%{version}.gemspec
 
